@@ -1,0 +1,187 @@
+
+@font-face {
+  font-family: "Kameron";
+  src: url("../fonts/Kameron/Kameron-Bold.ttf") format("trueType");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster Two";
+  src: url("../fonts/Lobster_Two/LobsterTwo-Regular.ttf") format("trueType");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Just Me Again Down Here";
+  src: url("../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "Tilt Prism";
+  src: url("../fonts/Tilt_Prism/static/TiltPrism-Regular.ttf") format("trueType"),
+    url("../fonts/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf") format("trueType");
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-column: 1 / 14;
+  grid-row: 2 / 12;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  gap: 20px;
+  align-content: center;
+  justify-items: center;
+
+}
+
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 10px 10px 10px #089c03;
+  z-index: -1;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-h1 {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  line-height: 45px;
+  color: #000000;
+  background: rgba(221, 181, 4, 0.767);
+  text-align: center;
+  font-family: "Lobster Two";
+  font-size: calc(1.5vw + 1.5em);
+
+}
+
+.card-bebidas .text-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+
+
+.card .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(221, 181, 4, 0.767);
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  box-shadow:  -10px 10px 10px #089c03;
+  overflow-y: auto;
+  font-family: "Kameron";
+  font-size: calc(1.5vw + .8em);
+
+}
+
+.card-bebidas + .face-front + .text-h1 {
+  height: 150px;
+}
+
+.card-bebidas .link-a {
+  color: #000000;
+}
+
+.card-bebidas .links {
+  border-top: 1px solid #000000;
+}
+
+
+
+.card .back .text-h2 {
+  font-size: calc(1vw + 1em);
+  letter-spacing: 1px;
+}
+
+.card .back .text-p {
+  letter-spacing: 1px;
+
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: -100px;
+
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  } 
+
+
+
+
+  /* Media queries para tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+      gap: 30px;
+    }
+  }
+
+  /* Media queries para pantallas de escritorio */
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      gap: 40px;
+    }
+  }
+
+}

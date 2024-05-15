@@ -1,0 +1,116 @@
+
+@font-face {
+  font-family: "Kameron";
+  src: url("../fonts/Kameron/Kameron-Bold.ttf") format("trueType");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster Two";
+  src: url("../fonts/Lobster_Two/LobsterTwo-Regular.ttf") format("trueType");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Just Me Again Down Here";
+  src: url("../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf")
+    format("trueType");
+}
+
+@font-face {
+  font-family: "Tilt Prism";
+  src: url("../fonts/Tilt_Prism/static/TiltPrism-Regular.ttf")
+      format("trueType"),
+    url("../fonts/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf")
+      format("trueType");
+}
+
+/* Reset de los estilos CSS */
+/*-------------------------*/
+/*-------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Declaracion de variable */
+/*-------------------------*/
+/*-------------------------*/
+
+:root {
+  --color-header: #6cb95a;
+  --color-banner: #7cc6f0;
+  --color-footer: #1e1e1e;
+  --color-texto: #ffffff;
+  --color-shadonw: rgba(231, 43, 10, 0.8);
+  --fuente-banner: 'Kameron';
+  --fuente-logo: "Tilt Prism"
+}
+
+
+.card-container {
+  display: grid;  
+  grid-column: 1 / 14;
+  grid-row: 2 / 12;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr)); 
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  
+}
+
+.card-container__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-header);
+  margin: 20px;
+  gap: 20px;
+  box-shadow: 25px 15px 15px 0 var(--color-shadonw);
+  border-radius: 1rem; 
+  height: 400px;
+;
+}
+
+.card-container iframe {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 60%;
+}
+
+.card-container h2 {
+  font-family: var(--fuente-logo);
+  font-weight: bold;
+  font-size: calc(1.25vw + 0.8em);
+  text-align: center; 
+  
+} 
+
+.card-container a {
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+
+.card-container button {
+  height: 4.5rem;
+  width: 60%;
+  margin: 0 auto;
+  border: none;
+  border-radius:.8rem;
+  font-family: var(--fuente-banner);
+  font-size: calc(.5vw + .8em);
+  background: var(--color-banner);
+  margin-bottom: 1rem;
+  padding: 0 .5rem;
+}
+
+.card-container button:hover {
+  box-shadow: 0px 5px 10px var(--color-shadonw);
+  
+}
+
+
+

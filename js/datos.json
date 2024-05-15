@@ -1,0 +1,22 @@
+{
+    "datos": [
+        {
+            "id": 2,
+            "suc": "Local Barracas",
+            "direccion": "Av, regimiento de Patricios 200",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.915426706772!2d-58.372780325002644!3d-34.63157745896879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334cae01edc97%3A0xca217d565b92062f!2sAv.%20Regimiento%20de%20Patricios%20200%2C%20C1265ADO%20CABA!5e0!3m2!1ses!2sar!4v1684015214185!5m2!1ses!2sar"
+        },
+        {
+            "id": 4,
+            "suc": "Local La Plata",
+            "direccion": "Diag 74 1190",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.331955918383!2d-57.957087024985704!3d-34.92321077444023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62eed628885%3A0xc758d0dd220be37a!2sDiag.%2074%201190%2C%20B1900CAB%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684015509956!5m2!1ses!2sar"
+        },
+        {
+          "id": 5,
+          "suc": "Local Quilmes Centro",
+          "direccion": "Nicolar Videla 374",
+          "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.432410236622!2d-58.25913192499743!3d-34.71949336362044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e3fe99bc20b%3A0x4593f3ffb03dffb1!2sNicol%C3%A1s%20Videla%20300%2C%20B1878%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1684015466358!5m2!1ses!2sar"
+        }
+    ]
+}

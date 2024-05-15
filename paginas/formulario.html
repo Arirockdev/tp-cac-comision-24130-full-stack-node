@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="../css/form.css">
+    <!-- FAV. ICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<form class="form" id="form-js">
+<h2 class="formulario-parrafo"> Formulario de reserva </h2>
+<div class="formulario-contenedor">
+
+    <div class="formulario-grupo">
+        <label for="names" class="etiqueta">Nombre</label>
+        <input type="text" id="names" class="formulario-entrada" placeholder="">
+        <span class="formulario-linea"></span>
+       
+    </div>
+
+    <div class="formulario-grupo">
+        <label for="lastname" class="etiqueta">Apellido</label>
+        <input type="text" id="lastname" class="formulario-entrada" placeholder="">
+        <span class="formulario-linea"></span>
+    </div>
+
+    <div class="formulario-grupo">
+        <label for="phone" class="etiqueta">Telefono</label>
+        <input type="number" id="phone" class="formulario-entrada" placeholder="">
+        <span class="formulario-linea"></span>
+        
+    </div>
+
+    <div class="formulario-grupo">
+        <label for="dni" class="etiqueta">Documento</label>
+        <input type="number" id="dni" class="formulario-entrada" placeholder="">
+        <span class="formulario-linea"></span>
+        
+    </div>
+
+    <div class="formulario-grupo">
+        <label for="subjets" class="etiqueta">Comensales</label>
+        <input type="number" id="subjets" class="formulario-entrada">
+        <span class="formulario-linea"></span>
+       
+    </div>
+
+<div class="second-div">
+
+    <div class="formulario-grupo">
+        <label for="date" class="etiqueta">Fecha de reserva</label>
+        <input type="date" id="date" class="formulario-entrada">
+        <span class="formulario-linea"></span>
+        
+    </div>
+    
+    <div class="formulario-grupo">
+        <label for="time" class="etiqueta">Horario de reserva</label>
+        <input type="time" id="time" class="formulario-entrada">
+        <span class="formulario-linea"></span>
+        
+    </div>
+    
+    <div class="formulario-grupo" >
+        <label for="location" class="etiqueta">Indique sucursal </label><br>
+        <select id="location" name="indique-sucursal">
+            <option value="Palermo" class="ki">La Plata</option> 
+            <option value="Belgrano" class="ki">Quilmes</option> 
+            <option value="Villa Urquiza" class="ki" >Barracas</option>  
+        </select>
+    </div>
+</div>
+  
+    <div class="sub-archivo">
+        <h3>Arrastra el comprobante de reserva</h3>
+        <span>O</span>
+        <button id="btn-drop">Selecciona un archivo</button>
+        <input type="file"  hidden multiple>
+    </div>
+       
+    
+</div>
+<input type="submit" value="Enviar" id="bottom">
+<span id="campo-vacio" style="display:none;"  class="warning">complete los campos vacios por favor</span>
+<span id="mayuscula-nombre" style="display:none;" class="warning">Por favor iniciar con mayúscula</span>
+<span id="mayuscula-apellido" style="display:none;" class="warning">Por favor iniciar con mayúscula</span>
+
+</form>
+
+
+ 
+<script src="../js/form-js.js"></script>
+</body>
+
+
+</html>

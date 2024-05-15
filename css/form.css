@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Happy Monkey', cursive;
+    background-color: #e9e9f3;
+    background-image: url(../assets/personas-tomando-cerveza.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    display: flex;
+    min-height: 100vh;
+}
+
+.form{    
+    background-color: #6cb95a;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 4rem 2rem 4rem 1rem;
+    box-shadow: 0 50px -10px rgb(0 ,0 ,0 / 70%);
+    text-align: center;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.formulario-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-grupo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    & input {
+        padding: .5rem;
+        font-size: 15px;
+        border: none;
+    }
+
+
+
+}
+label{
+    font-weight: 900;
+    margin-top: .8rem;
+}
+
+.second-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    & 
+    .formulario-grupo:nth-child(1),
+    .formulario-grupo:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .formulario-grupo:nth-child(3){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+.sub-archivo {
+    border: 2px dashed black;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: .5rem;
+    & span {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    & #btn-drop {
+        width: 50%;
+        align-self: center;
+        padding: .8rem;
+        border: none;
+        border-radius: 10px;
+        background: yellow;
+        font-size: .8rem;
+        font-weight: 700;
+        font-family: "Happy Monkey";
+    }
+}
+
+/* Esto yo no lo hice lo segui igual que en el video */
+
+.sub-archivo.active{
+    background-color: #ffffff;
+    border: 2px dashed blue;
+}
+    
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #bbbbbb;
+}
+
+
+#preview {
+    margin-top: 10px;
+}
+
+.status-text {
+    padding: 0 10px;
+}
+
+.succes {
+    color: green;
+}
+
+.failuer {
+    color: red;
+}
+
+
+/* hasta acá */
+
+#bottom {
+    margin-top: .8rem;
+    padding: .5rem;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: orange;
+    box-shadow: 0px 5px 15px 0px #000000;
+}
+
+.warning {
+    font-size: 1.5rem;
+    margin-top: 2rem;   
+}
